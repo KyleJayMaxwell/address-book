@@ -21,3 +21,8 @@ CREATE TABLE addresses (
   zip_code int
 );
 
+CREATE TABLE homes (
+  contact_id integer references contacts(id) on delete cascade,
+  address_id integer references addresses(id) on delete cascade
+);
+
