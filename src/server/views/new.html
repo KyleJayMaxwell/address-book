@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="center">{{ title }}</h1> 
+      </div>
+    </div>
+  
+    <form>
+      <div class="row">
+        <div class="col-lg-6">
+          First Name: <br>
+          <input type="text" name="first_name"> 
+        </div>
+        <div class="col-lg-6">
+          Last Name: <br>
+          <input type="text" name="last_name"> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          Phone Number: <br>
+          <input type="number" name="first_name"> 
+        </div>
+        <div class="col-lg-4">
+          Email Address: <br>
+          <input type="text" name="email"> 
+        </div>
+        <div class="col-lg-4">
+          Image Url: <br>
+          <input type="text" name="img_url"> 
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="row">
+        <div class="col-lg-8">
+          Select An Address: <br>
+          <select><option value="">123 S. Auburn Place</option></select> 
+        </div>
+        <div class="col-lg-4">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          Line 1:<br>
+          <input type="text" name="line_1">
+        </div>
+        <div class="col-lg-2">
+          Line 2:<br>
+          <input type="text" name="line_2">
+        </div>
+        <div class="col-lg-3">
+          City:<br>
+          <input type="text" name="city">
+        </div>
+        <div class="col-lg-2">
+          State:<br>
+          <input type="text" name="state">
+        </div>
+        <div class="col-lg-2">
+          Country:<br>
+          <input type="text" name="country">
+        </div>
+      </div>
+    </form>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <button>Create Contact</button>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

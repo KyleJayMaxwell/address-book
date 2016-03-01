@@ -9,8 +9,18 @@ a {
 
 .profile {
   max-width: 80%;
+  border-radius: 50%;
 }
 
 .center {
   text-align: center;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 7%;
+}
+select {
+  width: 100%;
+  margin-bottom: 7%;
 }
