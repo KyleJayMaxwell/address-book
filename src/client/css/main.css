@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.profile {
+  max-width: 80%;
+}
+
+.center {
+  text-align: center;
+}

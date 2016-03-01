@@ -7,8 +7,36 @@
 
   <div class="container">
 
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="center">{{ title }}</h1> 
+        <a class="pull-right" href="/address/new"><p>New Contact</p></a>  
+      </div>
+    </div>
+
+    {% for index in homes %}
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="center">{{ index.first_name }} {{ index.last_name }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 center">
+          <img class="profile" src="{{ index.img_url }}">
+        </div>
+        <div class="col-md-4 center">
+          <h4>Contact Info</h4>
+          <p>Phone Number: {{ index.phone }}<br>
+          Email Address: {{ index.email }}</p>
+          <input class="center" type="submit">
+        </div>
+        <div class="col-md-4">
+          <h4 class="center">Address</h4>
+          <p class="center">{{ index.line_1 }} {{ index.line_2 }}<br>
+          {{ index.city }}, {{ index.state }} {{ index.country }} {{ index.zip_code }}</p>
+        </div>
+      </div>
+    {% endfor %}
 
   </div>
 
